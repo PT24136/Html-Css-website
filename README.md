@@ -1,2 +1,3 @@
 # HTML - CSS Website
-standard static website
+## standard static website
+- [Technogolies used]
