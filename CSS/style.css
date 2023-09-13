@@ -1,0 +1,255 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+    /* navigation */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  font-family: 'Baloo Bhai 2';
+}
+#logo {
+  margin: 7px 7px;
+}
+#logo img {
+  height: 70px;
+  margin: 3px 6px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 85%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+}
+#navbar ul li {
+  list-style-type: none;
+  font-size: 1.1rem;
+  color: white;
+}
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 18px;
+  color: whitesmoke;
+  border-radius: 15px;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+     /* Home section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 150px;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  font-family: 'Bree Serif', serif;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url(../image/roll.jpg) no-repeat center
+    center;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.96;
+  z-index: -1;
+}
+#home h1 {
+  color: white;
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 12px;
+}
+#home p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#home h1::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 1s;
+}
+#home h1:hover::after{
+  width: 100%;
+
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid greenyellow;
+  background-color: brown;
+  color: white;
+  border-radius: 10px;
+  margin: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:red;
+  color: black;
+  transition: 0.8s;
+  font-size: 1.5rem;
+}
+     /* Services section */
+
+   .server h1{
+      color: rebeccapurple;
+     margin-left: 40%;
+      margin-top: 23%;
+      font-size: 40px;
+    }
+    .server h1:hover{
+      transition: 0.5s;
+       color: blue;
+    }
+#services{
+    display: flex;
+    margin: 20px;
+    padding-top: 8px;
+}
+#services h1{
+  font-size: 35px;
+  color:rgb(77, 76, 76);
+
+}
+#services .box{
+     border: 2px solid orange;
+     padding:14px;
+     margin: 3px 6px;
+     border-radius: 25px;
+     background-color:rgb(154, 152, 152);
+     color: aliceblue;
+     font-family: 'Bree Serif',serif ;
+}
+#services .box:hover{
+  
+  background-color: rgb(18, 158, 158);
+  transition: 0.4s;
+  transform: translateY(-20px);
+}
+
+.box img{
+    display: block;
+    height: 140px;
+    margin: auto;
+}
+.box h2{
+  padding: 12px;
+  font-size: 2.1rem;
+  font-family: 'Bree Serif',serif ;
+  color: black;
+}
+.box h2:hover{
+  color: blue;
+  transition: 0.8s;
+}
+.box p{
+  font-family: 'Bree Serif',serif ;
+  color: rgb(56, 55, 55);
+}
+
+
+      /* clients section */
+
+#clients{
+  height: 300px;
+}
+#clients h1{
+    text-align: center;
+    font-size: 50px;
+}
+#clients::before{
+  content: "";
+  position: absolute;
+  background-image: url(../image/home1.jpg);
+  width: 100%;
+  height: 52%;
+  z-index: -1;
+  opacity: 0.3;
+}
+.items img{
+  height: 82px;
+  filter: grayscale(50%);
+}
+.items img:hover{
+  filter:none;
+}
+
+#power{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items{
+  padding: 32px;
+}
+    /* contact section */
+
+#contact{
+  position: relative;
+}
+#contact h1{
+  text-align: center;
+  font-size: 2.5rem;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  background: url(../image/contact2.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+ 
+#contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.4rem;
+   border-radius: 12px;
+   font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-family: 'Bree Serif',serif  ;
+  font-size: 1.3rem;
+}
+    /* footer section */
+    
+#foot{
+  background-color: rgb(33, 31, 31);
+  color: whitesmoke;
+  text-align: center;
+  padding: 9px 20px;
+  margin-top: 10px;
+}
